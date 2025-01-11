@@ -8,6 +8,7 @@ import { HomeComponent } from './components/home/home.component';
 export const routes: Routes = [
     {path: '', component: HomeComponent},
     {path: 'employees', component: EmployeeListComponent},
-    
-    {path: 'employees/:id', component: EmployeeDetailsComponent},
+    {path: 'employees/add', component: AddEditEmployeeComponent},
+    {path: 'employees/edit/:id', component: AddEditEmployeeComponent},
+    {path: 'employees/:id', component: EmployeeDetailsComponent}
 ];
