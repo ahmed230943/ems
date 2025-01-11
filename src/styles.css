@@ -1,0 +1,145 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Ramaraja&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+.ramaraja-regular {
+    font-family: "Ramaraja", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .crimson-text-regular {
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3vh;
+    text-decoration: none;
+  }
+  
+  .crimson-text-semibold {
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+  
+  .crimson-text-bold {
+    font-family: "Crimson Text", serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2vh;
+  }
+  
+  .crimson-text-regular-italic {
+    font-family: "Crimson Text", serif;
+    font-weight: 400;
+    font-style: italic;
+  }
+  
+  .crimson-text-semibold-italic {
+    font-family: "Crimson Text", serif;
+    font-weight: 600;
+    font-style: italic;
+  }
+  a{
+    text-decoration: none;
+  }
+  .crimson-text-bold-italic {
+    font-family: "Crimson Text", serif;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 4vh;
+  }
+
+
+.roboto-mono {
+  font-family: "Roboto Mono", serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-size: 2vh;
+}
+  body {
+    background-color: rgb(254, 249, 225);
+    overflow-x: hidden;
+}
+
+
+
+
+.navbar{
+  background-color: rgb(229, 208, 172);
+  border-bottom: 5px solid #E5D0AC;
+}
+.fa-house, .fa-users, .fa-circle-info, .fa-pen-to-square{
+  padding: 10px 15px;
+  font-size: 3vh;
+}
+.aligningstuff{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#task-list {
+  list-style: none;
+  padding: 0;
+ }
+ .ramaraja-regular {
+  font-family: "Ramaraja", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 5vh;
+} 
+ .first-letter {
+  color: rgb(109, 35, 35);
+}
+.hh1{
+  font-size: 10vh;
+  font-weight: 800;
+  text-align: center;
+  margin: 3vh;
+}
+.taskInput{
+  border: 2px solid rgb(229, 208, 172);
+  padding: 5px 15px;
+  border-radius: 15px;
+  width: 30%;
+  
+}
+.taskInputBtn{
+  border: 2px solid rgb(163, 29, 29);
+  padding: 5px 15px;
+  border-radius: 10px;
+  color:  rgb(163, 29, 29);
+  background-color: white;
+  font-weight: 700;
+  margin-left: 1rem;
+  transition: 0.5 ease-in-out;
+}
+.taskInputBtn:hover{
+  transform: scale(1.08);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.taskInputBtn:active{
+  box-shadow: 3px 3px white inset, 3px 3px black;
+}
+ .task {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+ }
+ .task-text {
+  flex-grow: 1;
+  margin-right: 10px;
+ }
+
+
+.container{
+  margin-top: 3vh;
+  background-color: rgb(255, 255, 255);
+  border-radius: 15px;
+  padding: 0;
+}
+.listem{
+width: 100%;
+padding: 5px;
+margin: 10px;
+
+}

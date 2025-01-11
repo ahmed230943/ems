@@ -1,0 +1,313 @@
+<div class="noscroll" style="position: fixed; width: 100%; top: 0;">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid aligningstuff">
+      <i class="fa-solid fa-users"></i>
+      <h1 class="pt-4 ramaraja-regular">
+        <span class="first-letter">E</span>mployee
+        <span class="first-letter">M</span>anagement
+        <span class="first-letter">S</span>ystem
+      </h1>
+      <div
+        class="collapse navbar-collapse justify-content-end"
+        id="navbarSupportedContent"
+      >
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" routerLink=""
+              ><i class="fa-solid fa-house"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <h1 class="hh1 single-line crimson-text-bold">
+    <span class="first-letter">E</span>mployee
+    <span class="first-letter">L</span>ist <br />
+  </h1>
+  <div class="d-flex justify-content-center">
+    <button
+      id="add-task-btn"
+      class="taskInputBtn"
+      routerLink="/employees/edit/:id"
+    >
+      Add Employee
+    </button>
+  </div>
+</div>
+<div class="d-flex justify-content-center align-items-center fello" style="height: 100vh;">
+<div
+class="container"
+style="
+  padding: 40px;
+  position: absolute;
+  background-color: transparent;
+  overflow-y: scroll;
+  max-height: 62vh;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  bottom: 3%;
+  margin-left: 15%;
+  margin-right: 15%;
+"
+>
+<div class="row justify-content-start">
+  <div
+    *ngFor="let employee of employees"
+    class="col-md-3 mb-4 d-flex justify-content-center"
+  >
+    <div class="employee-card" style="width: 100%">
+      <button
+        id="details-btn"
+        class="taskInputBtn hvr-grow overflow-x-hidden"
+        [routerLink]="['/employees', employee.id]"
+        style="width: 100%"
+      >
+        <h4 class="card-title crimson-text-bold">{{ employee.name }}</h4>
+        <h5
+          class="card-subtitle mb-2 first-letter crimson-text-semibold-italic"
+        >
+          #{{ employee.id }}
+        </h5>
+      </button>
+    </div>
+  </div>
+</div>
+
+</div>
+  
+
+  <style>
+    @media (max-width: 1400px) {
+      .container {
+        height: 60vh;
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+      .employee-card {
+        width: 100%;
+      }
+      .hh1 {
+        font-size: 8vh;
+      }
+      .taskInputBtn {
+        font-size: 1.2rem;
+      }
+    }
+    @media (max-width: 1600px) {
+      .container {
+        height: 62vh;
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+      .employee-card {
+        width: 100%;
+      }
+      .hh1 {
+        font-size: 8vh;
+      }
+      .taskInputBtn {
+        font-size: 1.2rem;
+      }
+    }
+    @media (max-width: 1800px) {
+      .container {
+        height: 62vh;
+        margin-left: 10%;
+        margin-right: 10%;
+      }
+      .employee-card {
+        width: 100%;
+      }
+      .hh1 {
+        font-size: 8vh;
+      }
+      .taskInputBtn {
+        font-size: 1.2rem;
+      }
+    }
+
+    @media (max-width: 1200px) {
+      .container {
+        height: 62vh;
+        margin-left: 8%;
+        margin-right: 8%;
+      }
+      .employee-card {
+        width: 100%;
+      }
+      .hh1 {
+        font-size: 7.5vh;
+      }
+      .taskInputBtn {
+        font-size: 1.1rem;
+      }
+    }
+
+    @media (max-width: 1000px) {
+      .container {
+        height: 62vh;
+        margin-left: 6%;
+        margin-right: 6%;
+      }
+      .employee-card {
+        width: 100%;
+      }
+      .hh1 {
+        font-size: 7vh;
+      }
+      .taskInputBtn {
+        font-size: 1rem;
+      }
+    }
+
+    @media (max-width: 850px) {
+      .container {
+        height: 62vh;
+        margin-left: 4%;
+        margin-right: 4%;
+      }
+      .employee-card {
+        width: 100%;
+      }
+      .hh1 {
+        font-size: 6.5vh;
+      }
+      .taskInputBtn {
+        font-size: 0.95rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        height: 60vh;
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+      .employee-card {
+        width: 100%;
+      }
+      .hh1 {
+        font-size: 7vh;
+      }
+      .taskInputBtn {
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .container {
+        margin-left: 2%;
+        margin-right: 2%;
+      }
+      .employee-card {
+        width: 100%;
+      }
+      .hh1 {
+        font-size: 5vh;
+      }
+      .taskInputBtn {
+        font-size: 0.8rem;
+      }
+    }
+
+    @media (max-width: 450px) {
+      .container {
+        margin-left: 1%;
+        margin-right: 1%;
+      }
+      .employee-card {
+        width: 100%;
+      }
+      .hh1 {
+        font-size: 5vh;
+      }
+      .taskInputBtn {
+        font-size: 0.7rem;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .container {
+        height: 55vh;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+      }
+      .employee-card {
+        width: 100%;
+      }
+      .hh1 {
+        font-size: 5vh;
+      }
+      .taskInputBtn {
+        font-size: 1.0rem;
+      }
+    }
+    @media (max-width: 768px) {
+      .container {
+        height: 60vh;
+        margin-left: 5%;
+        margin-right: 5%;
+      }
+      .employee-card {
+        width: 100%;
+      }
+      .hh1 {
+        font-size: 7vh;
+      }
+      .taskInputBtn {
+        font-size: 0.9rem;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .container {
+        margin-left: 2%;
+        margin-right: 2%;
+      }
+      .employee-card {
+        width: 100%;
+      }
+      .hh1 {
+        font-size: 5vh;
+      }
+      .taskInputBtn {
+        
+        font-size: 0.8rem;
+      }
+    }
+
+    @media (max-width: 450px) {
+      .container {
+        margin-left: 1%;
+        margin-right: 1%;
+      }
+      .employee-card {
+        width: 100%;
+      }
+      .hh1 {
+        font-size: 5vh;
+      }
+      .taskInputBtn {
+        font-size: 0.7rem;
+      }
+    }
+
+    @media (max-width: 400px) {
+      .container {
+        height: 55vh;
+        margin-left: 0.5%;
+        margin-right: 0.5%;
+      }
+      .employee-card {
+        width: 100%;
+      }
+      .hh1 {
+        font-size: 5vh;
+      }
+      .taskInputBtn {
+        font-size: 1.0rem;
+      }
+    }
+  </style>
